@@ -1,0 +1,24 @@
+@import './../global-styles.module.scss';
+
+.wrapper {
+    padding: 24px;
+    background: $bgColor;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title {
+    margin: 10px 0 16px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+.error {
+    background: $colorError;
+    padding: 6px 12px;
+    // border-radius: 8px;
+    color: $colorLight;
+    margin-bottom: 12px;
+    font-size: 16px;
+}

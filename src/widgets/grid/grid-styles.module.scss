@@ -1,0 +1,121 @@
+$color: #50895B;
+$headColor: rgba(120, 217, 104, 0.72);
+
+.gridWrapper {
+    width: fit-content;
+    max-width: 100%;
+    margin: 12px 0;    
+}
+.gridBody {
+    max-height: 95vh;
+    overflow: auto;
+}
+.gridHead {
+    display: flex;
+    background-color: $headColor;
+    border-radius: 5px 5px 0 0;
+    // justify-content: space-around;
+    padding: 15px 0;
+}
+.gridHeadItem {
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+
+}
+.gridRow {
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+.gridRowItem {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.gridFilter {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-color: $color;
+    margin-bottom: 12px;
+    font-size: 14px;
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    min-width: 150px;
+}
+.buttonWrapperItem {
+    width: 30px;
+    height: 30px;
+    color: $color;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.1s all linear;
+    &:hover {
+        background: #ccc;
+    }
+}
+//cells
+.gridImage {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.gridImageItem {
+    height: 100%;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.4) rgba(0,0,0,0.1);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.2);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.2);
+  }
+//Controls
+.gridControls {
+    display: flex;
+    justify-content: space-between;
+    &__exportExcel {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+}

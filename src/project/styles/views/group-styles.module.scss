@@ -1,0 +1,187 @@
+@import './../global-styles.module.scss';
+
+.wrapper {
+    padding: 0 12px;
+}
+.gridHeadItem {
+    min-width: 200px;
+}
+.buttonWrapper {
+    text-align: center;
+    &__btn {
+        width: 150px;
+        padding: 5px 0;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        background: $color;
+        color: $colorLight;
+        border: 1px solid $color;
+        transition: $transition;
+        cursor: pointer;
+        &:hover {
+            background: $colorLight;
+            color: $color;
+        }
+    }
+}
+.input {
+    & input, textarea {
+        width: 300px;
+        border-radius: 5px;
+        border-color: $headColor;
+        padding: 5px 10px;
+        outline: none;
+        &:focus {
+            border-color: $color;
+        }
+    }
+    &__error {
+        margin: 5px 0;
+    }
+}
+.qrWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    &__btn {
+        background: $color;
+        color: $colorLight;
+        border: 1px solid $color;
+        transition: $transition;
+        display: block;
+        margin: 6px auto;
+        padding: 5px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        &:hover {
+            background: $colorLight;
+            color: $color;
+        }
+    }
+}
+.deleteBtnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btn {
+        background: $color;
+        color: $colorLight;
+        border: 1px solid $color;
+        transition: $transition;
+        display: block;
+        margin: 6px auto;
+        padding: 5px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        &:hover {
+            background: $colorLight;
+            color: $color;
+        }
+    }
+}
+.editor {
+    padding: 24px 6px;
+    &__item {
+        margin-bottom: 12px;
+        &__title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        &__input {
+            & input, textarea {
+                width: 411px;
+                border-radius: 5px;
+                border-color: rgba(0, 195, 183, 0.3);
+                padding: 10px 15px;
+                outline: none;
+                &:focus {
+                    border-color: $color;
+                }
+            }
+        }
+        &__select {
+            border-radius: 5px;
+            border: 1px solid $color;
+            padding: 5px 15px;
+            // margin: 0 15px;
+        }
+    }
+    &__wrapper__button {
+        margin: 10px 0;
+        text-align: center;
+    }
+    &__button {
+        background: $color;
+        padding: 5px 15px;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        border: 1px solid $color;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        &:hover {
+            color: $color;
+            border-color: $color;
+            background: #fff;
+        }
+    }
+    &__error {
+        color: red;
+    }
+    &__input__error {
+        & input, textarea {
+            border-color: red;
+        }
+    }
+    &__checkWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__checkTitle {
+        display: flex;
+        align-items: center;
+        &__link {
+            margin-left: 6px;
+            color: $color;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__check {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $color;
+        cursor: pointer;
+        margin-right: 12px;
+        &__active {
+            background-color: $color;
+        }
+    }
+}
+.returnWrapper {
+    padding: 12px 0;
+    width: 350px;
+    text-align: center;
+}
+.money {
+    background: $colorLightGray;
+    margin-top: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: fit-content;
+    &__title {
+        margin-bottom: 6px;
+        color: $color;
+    }
+    &__info {
+        margin: 6px 0;
+    }
+}

@@ -1,0 +1,149 @@
+@import "./../global-styles.module.scss";
+
+.wrapper {
+    padding: 0 12px;
+    width: 100%;
+}
+.head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.gridFilter {
+    margin-bottom: 0;
+}
+.filterWeeks {
+    display: flex;
+    align-items: center;
+    color: $color;
+    font-weight: 700;
+    // margin-left: 20%;
+}
+.filterWeeksItem {
+    padding: 0 6px;
+    
+}
+.modalScheduleBody {
+    text-align: center;
+    max-width: 400px;
+}
+.filterWeeksBtn {
+    color: $color;
+    font-size: 22px;
+    background: transparent;
+    border: none;
+    transition: $transition;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.filterCopy {
+    display: flex;
+    align-items: center;
+    margin: 0 12px
+}
+.filterCopyItem {
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
+    cursor: pointer;
+    &:hover .filterCopyBtn {
+        background: $colorLight;
+        color: $color;
+        transition: $transition;
+    }
+}
+.filterCopyBtn {
+    border: 1px solid $color;
+    border-radius: 5px;
+    color: $colorLight;
+    background: $color;
+    font-size: 22px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.table {
+    &__head {
+        display: flex;
+        &__item {
+            text-align: center;
+            padding: 4px 2px;
+            height: 45px;
+            width: 45px;
+            font-weight: 700;
+            border: 1px solid $colorBlackGray;
+            &__week {
+                color: $color;
+                font-size: 18px;
+            }
+            &_cell {
+                border: 1px solid $colorLightGray;
+                height: 22px;
+                cursor: pointer;
+                transition: $transition;
+                &:hover {
+                    border-color: $color;
+                }
+            }
+        }
+    }
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    width: 70px;
+    align-items: center;
+    &__data {
+        border: 1px solid $colorBlackGray;
+        color: #085353;
+        font-weight: 700;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+.schedule {
+    display: flex;
+    &__filter {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background: $headColor;
+        & select {
+            margin-right: 20px;
+        }
+    }
+    &__cells {
+        background: $bgColor;
+        font-weight: 700;
+    }
+}
+.deleteBtnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btn {
+        cursor: pointer;
+        background: $color;
+        color: $colorLight;
+        border: 1px solid $color;
+        transition: $transition;
+        display: block;
+        margin: 6px auto;
+        padding: 5px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        &:hover {
+            background: $colorLight;
+            color: $color;
+        }
+    }
+}

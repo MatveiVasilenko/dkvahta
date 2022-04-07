@@ -1,0 +1,26 @@
+@import './../../global-styles.module.scss';
+
+.mainWrapper {
+    padding: 12px;
+    &__role {
+        font-size: 18px;
+        background: $bgColor;
+        padding: 6px 12px;
+        border-radius: 8px;
+        width: fit-content;
+        margin-bottom: 12px;
+    }
+}
+.counter {
+    width: fit-content;
+    &__title {
+        font-weight: bold;
+    }
+    &__value {
+        font-weight: bold;
+        font-size: 24px;
+        text-align: right;
+        color: $color;
+        margin-top: 6px;
+    }
+}

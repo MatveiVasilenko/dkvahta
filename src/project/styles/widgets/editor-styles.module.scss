@@ -1,0 +1,7 @@
+@import './../global-styles.module.scss';
+
+.wrapper {
+    &__item {
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,92 @@
+$color: #50895B;
+
+.paggination {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.editor {
+    padding: 24px 6px;
+    &__item {
+        margin-bottom: 12px;
+        &__title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        &__input {
+            & input, textarea {
+                width: 411px;
+                border-radius: 5px;
+                border-color: rgba(0, 195, 183, 0.3);
+                padding: 10px 15px;
+                outline: none;
+                &:focus {
+                    border-color: $color;
+                }
+            }
+        }
+        &__select {
+            border-radius: 5px;
+            border: 1px solid $color;
+            padding: 5px 15px;
+            // margin: 0 15px;
+        }
+    }
+    &__wrapper__button {
+        margin: 10px 0;
+        text-align: center;
+    }
+    &__button {
+        background: $color;
+        padding: 5px 15px;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        border: 1px solid $color;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        &:hover {
+            color: $color;
+            border-color: $color;
+            background: #fff;
+        }
+    }
+    &__error {
+        color: red;
+    }
+    &__input__error {
+        & input, textarea {
+            border-color: red;
+        }
+    }
+    &__checkWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+    &__checkTitle {
+        display: flex;
+        align-items: center;
+        &__link {
+            margin-left: 6px;
+            color: $color;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__check {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $color;
+        cursor: pointer;
+        margin-right: 12px;
+        &__active {
+            background-color: $color;
+        }
+    }
+}

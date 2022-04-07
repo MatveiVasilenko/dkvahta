@@ -1,0 +1,82 @@
+@import './../global-styles.module.scss';
+
+.scanWrapper {
+    padding: 12px;
+    border-left: 1px solid $bgColor;
+}
+.scanWrapperTitle {
+    // text-align: center;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+.scan {
+    width: 100%;
+    padding: 16px 8px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 200px;
+        background-color: $bgColor;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 12px auto;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 24px;
+        color: $color;
+        text-align: center;
+    }
+    &__type {
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        background: $color;
+        margin: 12px 0;
+    }
+    &__text {
+        color: $color;
+        font-size: 20px;
+        text-align: center;
+    }
+    &__money {
+        color: $color;
+        background: #ccc;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    &__status {
+        font-size: 18px;
+        text-align: center;
+        background-color: rgb(184, 173, 247);
+        color: #000;
+        padding: 6px 0;
+    }
+    &__statusPay {
+        font-size: 22px;
+        text-align: center;
+        color: #fff;
+        padding: 10px 0;
+        font-weight: 700;
+    }
+}
+.scanActive {
+    background: green;
+}
+.scanUnActive {
+    background: yellow;
+}
+.scanInput {
+    opacity: 0;
+    width: 0px;
+}

@@ -1,0 +1,79 @@
+@import "./../../style.module.scss";
+@import "./../../project/styles/widgets/table-styles.module.scss";
+.wrapper {
+    padding: 0 12px;
+}
+.main {
+    display: flex;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.dates {
+    display: flex;
+    &__item {
+        width: 35px;
+        height: 50px;
+        text-align: center;
+        // line-height: 30px;
+        border: 1px solid $colorBorder;
+        &_active {
+            
+        }
+    }
+    &__active {
+        height: 25px;
+        background-color: blue;
+        border: 1px solid $colorBorder;
+    }
+    &__unactive {
+        height: 25px;
+        border: 1px solid $colorBorder;
+
+    }
+}
+.dates__time {
+    font-size: 10px;
+    // line-height: 20px;
+    // height: 20px;
+    & div {
+        // height: 10px;
+        // line-height: 20px;
+    }
+}
+//New
+.headerWrapperFilter {
+    display: flex;
+    align-items: center;
+    &__item {
+        margin-right: 12px;
+    }
+}
+.headerWrapperLegend {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    background: $colorLightGray;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 5px 10px;
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        &__cube {
+            width: 25px;
+            height: 25px;
+            margin-right: 6px;
+            &_blue {
+                background: $colorBlue;
+            }
+            &_yellow {
+                background: $colorYellow;
+            }
+            &_red {
+                background: $colorRed;
+            }
+        }
+    }
+}

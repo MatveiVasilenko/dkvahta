@@ -1,0 +1,52 @@
+@import "./../../style.module.scss";
+
+.schedule {
+    display: flex;
+    &__filter {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background: $headColor;
+        & select {
+            margin-right: 20px;
+        }
+    }
+    &__cells {
+        background: $bgColor;
+        font-weight: 700;
+    }
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    width: 70px;
+    align-items: center;
+    &__data {
+        padding: 5px;
+        border: 1px solid $colorBorder;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+.weekline {
+    display: flex;
+    &__data {
+        padding: 5px;
+        border: 1px solid $colorBorder;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__top {
+            transition: 0.2s all linear;
+            &:hover {
+                cursor: pointer;
+                color: $color;
+            }
+        }
+    }
+}

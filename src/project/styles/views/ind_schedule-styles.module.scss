@@ -1,0 +1,225 @@
+@import "./../global-styles.module.scss";
+
+.wrapper {
+    padding: 0 12px;
+    width: 100%;
+}
+.head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.gridFilter {
+    margin-bottom: 0;
+}
+.filterWeeks {
+    display: flex;
+    align-items: center;
+    color: $color;
+    font-weight: 700;
+    // margin-left: 20%;
+}
+.filterWeeksItem {
+    padding: 0 6px;
+    
+}
+.filterWeeksBtn {
+    color: $color;
+    font-size: 22px;
+    background: transparent;
+    border: none;
+    transition: $transition;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.filterCopy {
+    display: flex;
+    align-items: center;
+    margin: 0 12px
+}
+.filterCopyItem {
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
+}
+.filterCopyBtn {
+    background: $colorLight;
+    border: 1px solid $color;
+    border-radius: 5px;
+    color: $colorLight;
+    background: $color;
+    font-size: 22px;
+    margin-right: 6px;
+}
+//TABLE HEAD
+.table {
+    display: flex;
+}
+.tableBodyHead {
+    overflow-x: auto;
+}
+.tableHead {
+    display: flex;
+    &__info {
+        width: 300px;
+        min-width: 300px;
+        &__week {
+            padding: 5px 0;
+            border: 1px solid $colorLightGray;
+            color: $colorBlackGray;
+            text-align: right;
+            font-weight: 500;
+            padding-right: 8px;
+
+        }
+        &__day {
+            font-size: 14px;
+            border: 1px solid $colorLightGray;
+            color: $colorBlackGray;
+            text-align: right;
+            font-weight: 500;
+            padding-right: 8px;
+            padding: 6px 0;
+        }
+    }
+    &__weeks {
+        display: flex;
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 825px;
+            min-width: 825px;
+            border: 1px solid $colorLightGray;
+            padding: 5px 0;
+            font-weight: 700;
+        }
+    }
+    &__days {
+        display: flex;
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 25px;
+            min-width: 25px;
+            font-size: 12px;
+            border: 1px solid $colorLightGray;
+            // transform: rotateZ(-90deg);
+        }
+    }
+}
+.tableBody {
+    &__lisp {
+        width: 300px;
+        max-width: 300px;
+        &__item {
+            padding: 3px 5px;
+            border: 1px solid $colorLightGray;
+            height: 28px;
+        }
+    }
+    &__row {
+        display: flex;
+        &__itemWrapper {
+            position: relative;
+        }
+        &__item {
+            width: 25px;
+            min-width: 25px;
+            height: 28px;
+            border: 1px solid $colorLightGray;
+            &__ivent {
+                position: absolute;
+                top: 3px;
+                bottom: 3px;
+                left: 3px;
+                right: 3px;
+                background: $colorBlue;
+                // z-index: 9;
+                opacity: 1;
+                &__info {
+                    position: absolute;
+                    top: 0;
+                    left: 8px;
+                    z-index: 99;
+                    width: 60px;
+                    background: $colorLight;
+                    padding: 5px;
+                    text-align: center;
+                    box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.8);
+                    border: 1px solid $colorYellow;
+                    font-size: 14px;
+                    transition: $transition;
+                }
+                &_warning {
+                    background: $colorYellow;
+                    cursor: pointer;
+                }
+            }
+            &_active {
+                background: $color;
+                opacity: 1;
+            }
+        }
+    }
+}
+.deleteBtnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btn {
+        cursor: pointer;
+        background: $color;
+        color: $colorLight;
+        border: 1px solid $color;
+        transition: $transition;
+        display: block;
+        margin: 6px auto;
+        padding: 5px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        &:hover {
+            background: $colorLight;
+            color: $color;
+        }
+    }
+}
+.legend {
+    background: $colorLightGray;
+    width: fit-content;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    &__block {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+    &__lisp {
+        padding: 0px 10px 15px 25px;
+        margin: 0;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        &__square {
+            min-width: 20px;
+            min-height: 20px;
+            margin-right: 6px;
+            &_event {
+                background: $color;
+            }
+            &_goodEvent {
+                background: $colorBlue;
+            }
+            &_badEvent {
+                background: $colorYellow;
+            }
+        }
+    }
+}

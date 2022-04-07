@@ -1,0 +1,41 @@
+@import "./../../project/styles/global-styles.module.scss";
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    background-color: $color;
+    height: 100vh;
+    padding: 15px 0;
+    & a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        display: block;
+        padding: 7px 0;
+        transition: 0.2s all linear;
+        &:hover {
+            background-color: #fff;
+            color: $color;
+        }
+    }
+}
+.link {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: block;
+    padding: 7px 0;
+    transition: 0.2s all linear;
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
+        color: $color;
+    }
+}
